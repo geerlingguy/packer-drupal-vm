@@ -7,9 +7,9 @@ Vagrant.configure("2") do |config|
 
   # VirtualBox.
   config.vm.define "virtualbox" do |virtualbox|
-    virtualbox.vm.hostname = "virtualbox-ubuntu1604"
-    virtualbox.vm.box = "file://builds/virtualbox-ubuntu1604.box"
-    virtualbox.vm.network :private_network, ip: "172.16.3.79"
+    virtualbox.vm.hostname = "virtualbox-drupal-vm"
+    virtualbox.vm.box = "file://builds/virtualbox-drupal-vm.box"
+    virtualbox.vm.network :private_network, ip: "172.16.3.82"
 
     config.vm.provider :virtualbox do |v|
       v.gui = false

@@ -1,15 +1,12 @@
-# Packer Example - Ubuntu 16.04 minimal Vagrant Box
+# Packer Build - Drupal VM
 
 **Current Ubuntu Version Used**: 16.04.4
 
-**Pre-built Vagrant Box**:
+Download from Vagrant Cloud: [`geerlingguy/drupal-vm`](https://app.vagrantup.com/geerlingguy/boxes/drupal-vm).
 
-  - [`vagrant init geerlingguy/ubuntu1604`](https://vagrantcloud.com/geerlingguy/boxes/ubuntu1604)
-  - See older versions: http://files.midwesternmac.com/
+This example build configuration installs and configures a default Drupal VM installation on Ubuntu using Ansible, and then generates a Vagrant box file for VirtualBox, and uploads it to Vagrant Cloud: [`geerlingguy/drupal-vm`](https://app.vagrantup.com/geerlingguy/boxes/drupal-vm).
 
-This example build configuration installs and configures Ubuntu 16.04 x86_64 minimal using Ansible, and then generates a Vagrant box file for VirtualBox.
-
-The example can be modified to use more Ansible roles, plays, and included playbooks to fully configure (or partially) configure a box file suitable for deployment for development environments.
+See related project [`packer-ubuntu-1604`](https://github.com/geerlingguy/packer-ubuntu-1604), and minimal base box [`geerlingguy/ubuntu1604`](https://vagrantcloud.com/geerlingguy/boxes/ubuntu1604).
 
 ## Requirements
 
@@ -24,7 +21,8 @@ The following software must be installed/present on your local machine before yo
 
 Make sure all the required software (listed above) is installed, then cd to the directory containing this README.md file, and run:
 
-    $ packer build -var 'version=1.2.0' ubuntu1604.json
+    $ git clone git@github.com:geerlingguy/drupal-vm.git
+    $ packer build -var 'version=1.2.0' drupal-vm.json
 
 After a few minutes, Packer should tell you the box was generated successfully, and the box was uploaded to Vagrant Cloud.
 
@@ -42,4 +40,4 @@ MIT license.
 
 ## Author Information
 
-Created in 2016 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+Created in 2018 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).

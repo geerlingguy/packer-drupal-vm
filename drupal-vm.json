@@ -16,11 +16,17 @@
     {
       "type": "ansible-local",
       "playbook_file": "ansible/main.yml",
-      "galaxy_file": "ansible/requirements.yml"
+      "galaxy_file": "ansible/requirements.yml",
+      "clean_staging_directory": true
     },
     {
-      "type": "ansible-local",
-      "playbook_file": "drupal-vm/provisioning/playbook.yml"
+      "type": "ansible",
+      "playbook_file": "drupal-vm/provisioning/playbook.yml",
+      "extra_arguments": [
+        "--extra-vars",
+        "drupal_build_composer_project=False drupal_install_site=False configure_drush_aliases=False"
+      ],
+      "user": "vagrant"
     },
     {
       "type": "shell",
