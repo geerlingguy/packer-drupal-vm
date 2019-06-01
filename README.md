@@ -1,12 +1,12 @@
 # Packer Build - Drupal VM
 
-**Current Ubuntu Version Used**: 16.04.6
+**Current Ubuntu Version Used**: 18.04.2
 
 Download from Vagrant Cloud: [`geerlingguy/drupal-vm`](https://app.vagrantup.com/geerlingguy/boxes/drupal-vm).
 
 This example build configuration installs and configures a default Drupal VM installation on Ubuntu using Ansible, and then generates a Vagrant box file for VirtualBox, and uploads it to Vagrant Cloud: [`geerlingguy/drupal-vm`](https://app.vagrantup.com/geerlingguy/boxes/drupal-vm).
 
-See related project [`packer-ubuntu-1604`](https://github.com/geerlingguy/packer-ubuntu-1604), and minimal base box [`geerlingguy/ubuntu1604`](https://vagrantcloud.com/geerlingguy/boxes/ubuntu1604).
+See related project [`packer-ubuntu-1804`](https://github.com/geerlingguy/packer-ubuntu-1804), and minimal base box [`geerlingguy/ubuntu1804`](https://vagrantcloud.com/geerlingguy/boxes/ubuntu1804).
 
 ## Requirements
 
