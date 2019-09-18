@@ -1,6 +1,6 @@
 # Packer Build - Drupal VM
 
-**Current Ubuntu Version Used**: 18.04.2
+**Current Ubuntu Version Used**: 18.04.3
 
 Download from Vagrant Cloud: [`geerlingguy/drupal-vm`](https://app.vagrantup.com/geerlingguy/boxes/drupal-vm).
 
