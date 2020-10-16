@@ -5,7 +5,7 @@ apt -y remove --purge ansible
 apt-add-repository --remove ppa:ansible/ansible
 
 # Apt cleanup.
-apt autoremove
+apt autoremove -y
 apt update
 
 #  Blank netplan machine-id (DUID) so machines get unique ID generated on boot.
