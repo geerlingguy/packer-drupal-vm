@@ -22,7 +22,7 @@ The following software must be installed/present on your local machine before yo
 Make sure all the required software (listed above) is installed, then cd to the directory containing this README.md file, and run:
 
     $ git clone git@github.com:geerlingguy/drupal-vm.git
-    $ packer build -var 'version=2.0.9' drupal-vm.json
+    $ packer build -var 'version=2.0.11' drupal-vm.json
 
 After a few minutes, Packer should tell you the box was generated successfully, and the box was uploaded to Vagrant Cloud.
 
