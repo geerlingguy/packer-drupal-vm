@@ -1,5 +1,7 @@
 # Packer Build - Drupal VM
 
+> **DEPRECATION NOTICE**: This project has been deprecated as of 2023. Thank you to all the box's users and contributors over the past decade!
+
 **Current Ubuntu Version Used**: 18.04.5
 
 Download from Vagrant Cloud: [`geerlingguy/drupal-vm`](https://app.vagrantup.com/geerlingguy/boxes/drupal-vm).
